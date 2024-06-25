@@ -1,11 +1,6 @@
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-
-.featureSvg {
-  height: 200px;
-  width: 200px;
+p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 16px 16px;
 }

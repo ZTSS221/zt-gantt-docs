@@ -4,47 +4,45 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ztGantt',
-  tagline: 'Streamline Your Project Timelines with Ease',
-  favicon: 'img/favicon.ico',
+  title: "ztGantt",
+  tagline: "Streamline Your Project Timelines with Ease",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://ZTSS221.github.io',
+  url: "https://ZTSS221.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/zt-gantt-docs/',
+  baseUrl: "/zt-gantt-docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'zehntech', // Usually your GitHub org/user name.
-  projectName: 'zt-gantt', // Usually your repo name.
+  organizationName: "zehntech", // Usually your GitHub org/user name.
+  projectName: "zt-gantt", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         // api: {
         //   showReadingTime: true,
@@ -54,7 +52,7 @@ const config = {
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       }),
     ],
@@ -64,67 +62,80 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: 'ztGantt',
+        title: "ztGantt",
         logo: {
-          alt: 'ztGantt Logo',
-          src: 'img/logo.png',
+          alt: "ztGantt Logo",
+          src: "img/logo.png",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Getting Started',
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Getting Started",
           },
-          // {to: '/api', label: 'API', position: 'left'},
           {
-            href: 'https://github.com/zehntech/zt-gantt',
-            label: 'GitHub',
-            position: 'right',
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar2",
+            position: "left",
+            label: "API",
+          },
+          {
+            href: "https://github.com/zehntech/zt-gantt",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Getting Started',
-                to: '/docs/getting-started',
+                label: "Getting Started",
+                to: "/docs/getting-started",
+              },
+              {
+                label: "Installation",
+                to: "/docs/installation",
+              },
+              {
+                label: "Features",
+                to: "/docs/installation",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Configuration",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "Options",
+                to: "/docs/installation",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: "Templates",
+                to: "/docs/installation",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: "Events",
+                to: "/docs/installation",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
-              // {
-              //   label: 'API',
-              //   to: '/api',
-              // },
               {
-                label: 'GitHub',
-                href: 'https://github.com/zehntech/zt-gantt',
+                label: "API",
+                to: "/docs/api",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/zehntech/zt-gantt",
               },
             ],
           },

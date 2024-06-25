@@ -4,64 +4,77 @@ sidebar_position: 4
 
 # Features
 
-
 ## Links
-create links between tasks to show task relation   through links in the Gantt .
 
-Four types links:
-  - finish-to-start 
-  - start-to-start 
-  - finish-to-finish 
-  - start-to-finish
+Create links between tasks to show task relations through various link types:
 
-![ztGantt logo](/gantt-img/links.gif)   
+- **Finish-to-Start**
+- **Start-to-Start**
+- **Finish-to-Finish**
+- **Start-to-Finish**
+
+![Links GIF](/gantt-img/links.gif)
 
 ## Filter
-Conveniently filter out tasks.
 
-![ztGantt logo](/gantt-img/links.gif)   
+Conveniently filter tasks based on criteria.
 
 ## Tooltips
-Additional insights via tooltips.
+
+Gain additional insights via tooltips.
 
 ## Column Resizing
-Columns in the sidebar are fully resizable.
+
+Resize columns in the sidebar as needed.
 
 ## Customization
-Modify the time scale, task edit form, and much more.
 
-![ztGantt logo](/gantt-img/popup.gif)   
+Customize the time scale, task edit form, and more.
+
+![Popup GIF](/gantt-img/popup.gif)
 
 ## Task Progress
-Update task progress via dragging or manually set the percentage.
+
+Update task progress via dragging or manual input.
 
 ## Zoom Levels
-Multiple timeline views - hour, day, week, month, quarter, and year.
+
+View multiple timeline zoom levels - hour, day, week, month, quarter, and year.
 
 ## Full Screen
-View your Gantt in full screen for an immersive experience.
+
+View the Gantt chart in fullscreen mode for an immersive experience.
 
 ## Task Management
+
 Expand, collapse, add markers, modify, or delete tasks.
 
 ## Auto Scheduling
+
 Tasks are automatically scheduled.
 
 ## Date Selection
-Easily select start and end dates through drag and drop.
+
+Easily select start and end dates via drag-and-drop.
 
 ## Mouse Scroll
-Scroll timeline using mouse click.
+
+Scroll through the timeline using the mouse.
 
 ## Aesthetics
-Customize the task colors via a color picker.
 
-![ztGantt logo](/gantt-img/taskColor.gif)   
+Customize task colors using a color picker.
+
+![Task Color GIF](/gantt-img/taskColor.gif)
 
 ## Localization
-Multilingual support to cater to a global audience.
+
+Supports multiple languages for global accessibility.
 
 ## Themes
-Dark mode for those late-night work sessions.
 
-![ztGantt logo](/gantt-img/theme.gif)   
+Dark mode theme available for comfortable viewing in low-light environments.
+
+![Theme GIF](/gantt-img/theme.gif)
+
+This section outlines the comprehensive features available in the ztGantt library, enhancing project management capabilities with robust functionalities and customizable options.
