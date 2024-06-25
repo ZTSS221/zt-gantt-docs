@@ -5,7 +5,7 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          <p>
+          <p className={styles.para}>
             Welcome to the documentation for ztGantt Chart Library. This library
             provides a powerful set of tools and functionalities to create
             interactive Gantt charts for project management. This documentation
