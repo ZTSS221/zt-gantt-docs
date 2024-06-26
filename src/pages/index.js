@@ -21,7 +21,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/getting-started"
           >
-            ztGantt Chart - 5min ⏱️
+            zt-gantt chart - 5min ⏱️
           </Link>
         </div>
         {/* <div className={styles.demo}>
@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="ztGantt chart documentation"
+      description="zt-gantt chart documentation"
     >
       <HomepageHeader />
       <main>

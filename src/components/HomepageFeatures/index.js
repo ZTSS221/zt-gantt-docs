@@ -6,7 +6,7 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="row">
           <p className={styles.para}>
-            Welcome to the documentation for ztGantt Chart Library. This library
+            Welcome to the documentation for zt-gantt chart library. This library
             provides a powerful set of tools and functionalities to create
             interactive Gantt charts for project management. This documentation
             will guide you through the installation process, usage instructions,

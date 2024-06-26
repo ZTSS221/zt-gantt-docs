@@ -1,22 +1,21 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import { themes as prismThemes } from "prism-react-renderer";
+
+const isDev = process.env.NODE_ENV === "development";
+
+const isDeployPreview =
+  !!process.env.NETLIFY && process.env.CONTEXT === "deploy-preview";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "ztGantt",
+  title: "zt-gantt",
   tagline: "Streamline Your Project Timelines with Ease",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://ZTSS221.github.io",
+  url: "https://zt-gantt-docs.netlify.app",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/zt-gantt-docs/",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -41,16 +40,7 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
         },
-        // api: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -64,9 +54,9 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "ztGantt",
+        title: "zt-gantt",
         logo: {
-          alt: "ztGantt Logo",
+          alt: "zt-gantt Logo",
           src: "img/logo.png",
         },
         items: [
@@ -78,8 +68,8 @@ const config = {
           },
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar2",
             position: "left",
+            sidebarId: "api",
             label: "API",
           },
           {
@@ -131,7 +121,7 @@ const config = {
             items: [
               {
                 label: "API",
-                to: "/docs/api",
+                to: "/docs/api/general",
               },
               {
                 label: "GitHub",
@@ -140,11 +130,23 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2023 ztGantt`,
+        copyright: `Copyright © 2023 zt-gantt`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      algolia: {
+        appId: "WGN8TBRKNK",
+        apiKey: "ee4324f1924bdd3dfd6d0e296ff5849d",
+        indexName: "ztss221io",
+        replaceSearchResultPathname:
+          isDev || isDeployPreview
+            ? {
+                from: /^\/docs\/next/g.source,
+                to: "/docs",
+              }
+            : undefined,
       },
     }),
 };

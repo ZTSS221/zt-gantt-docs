@@ -11,8 +11,8 @@ To create a basic **Gantt Chart**, follow these steps:
 Add the necessary JavaScript and CSS files to your HTML or project:
 
 ```html title="1. Include Library Files"
-<script src="ztGantt.js"></script>
-<link rel="stylesheet" href="ztGantt.css" type="text/css" />
+<script src="zt-gantt.js"></script>
+<link rel="stylesheet" href="zt-gantt.css" type="text/css" />
 ```
 
 ## Define Container Element
