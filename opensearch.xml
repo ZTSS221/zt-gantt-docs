@@ -4,8 +4,8 @@
   <ShortName>zt-gantt</ShortName>
   <Description>Search zt-gantt</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://zt-gantt-docs.netlify.app/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://zt-gantt-docs.netlify.app/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://zt-gantt-docs.netlify.app/opensearch.xml" />
-  <moz:SearchForm>https://zt-gantt-docs.netlify.app/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://ZTSS221.github.io/zt-gantt-docs/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://ZTSS221.github.io/zt-gantt-docs/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://ZTSS221.github.io/zt-gantt-docs/opensearch.xml" />
+  <moz:SearchForm>https://ZTSS221.github.io/zt-gantt-docs/</moz:SearchForm>
 </OpenSearchDescription>
